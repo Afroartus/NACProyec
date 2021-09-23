@@ -1,4 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 $roboto-font: "Roboto";
@@ -14,6 +15,13 @@ $purple-color: #6069eb;
 $blue-black-color: #2c306b;
 $blue-dark-color: #4c79d4;
 $blue-color: #59b6f6;
+
+
+//carousel
+$carousel-control-color: $blue-black-color;
+$carousel-indicator-active-bg: $blue-black-color;
+$carousel-caption-color: $blue-black-color;
+
 
 //navbar
 
@@ -188,6 +196,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    .btn.btn-primary {
+      margin-top: 0.8rem;
+      background: $purple-dark-color;
+      border: none;
+    }
     div {
       h5 {
         text-align: center;
@@ -266,6 +279,13 @@ body {
   }
 }
 
+.carousel-control-prev-icon{
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+}
+.carousel-control-next-icon{
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+}
 //fin servicios html
 
 //footer
