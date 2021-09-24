@@ -71,11 +71,12 @@ body {
 }
 
 .banner-home {
-  .banner-text {
+  .banner-text,
+  .banner-catalogo-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: 600;
     div {
       text-align: center;
@@ -84,6 +85,10 @@ body {
         font-weight: 100;
       }
     }
+  }
+  .banner-catalogo-text{
+    font-size: 5.8rem !important;
+    line-height: 2rem;
   }
   .banner-img {
     display: flex;
